@@ -1,8 +1,12 @@
+l = input('Please key in the lower integer : ')
+h = input('please key in the higher integer : ')
+l = int(l)
+h = int(h)
 import random
-r = random.randint(1, 100)
+r = random.randint(l, h)
 t = 0
 while True:
-	g = input('Please guess a number between 1~100 : ')
+	g = input('Please guess a number : ')
 	g = int(g)
 	t = t + 1 # t += 1
 	if g == r:
